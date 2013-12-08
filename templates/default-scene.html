@@ -1,0 +1,28 @@
+<!-- COMMENT ME OUT IF YOUR COMPUTER IS TOO SLOW -->
+{#elements[0].image}
+<div class="background-image fade" style="background-image:url('{.}');"></div>
+{/elements[0].image}
+
+{#name}<h1 class="fade">{.|s}</h1>{/name}
+
+
+{@setRandomPositionAmount amount="elements" /}
+
+{#elements}
+<div class="scene-element-container animates-in-canvas offcanvasright">
+
+	<div class="scene-element " style="{@randomCssPosition /}">
+		{#image}
+			<div class="image" style="background-image:url('{.}');"></div>
+		{/image}
+
+		{#title}
+		<div class="content"><h2>{.|s}</h2></div>
+		{/title}
+	</div>
+
+	{#description}
+	<div class="description fade">{.|s}</div>
+	{/description}
+</div>
+{/elements}

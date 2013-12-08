@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="">
+        <meta http-equiv="cleartype" content="on">
+        <link rel="stylesheet/less" type="text/css" href="less/main.less">
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- Yes, also works on (capable enough) mobile phones! -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+
+        <title>Loep</title>
+    </head>
+    <body>
+        <scenepicker></scenepicker>
+
+        <timeline></timeline>
+
+        <presentation>
+            <div id="app-loader" style="margin:auto;position:absolute; top:0;bottom:0;left:0;right:0;text-align:center; height:30px; width:80%;">
+                <p class="text-muted">Loading presentation...</p>
+                <div class="progress progress-striped active">
+                    <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div>
+            </div>
+        </presentation>
+
+        <!-- The different external dependencies -->
+        <script type="text/javascript" src="external/jquery-2.0.3.js"></script>
+        <script type="text/javascript" src="external/jquery.hotkeys/jquery.hotkeys.js"></script>
+        <script src="external/dustjs/lib/dust.js" type="text/javascript" charset="utf-8"></script>
+        <script dev="true" src="external/dustjs/lib/parser.js" type="text/javascript" charset="utf-8"></script>
+        <script dev="true" src="external/dustjs/lib/compiler.js" type="text/javascript" charset="utf-8"></script>
+        <script src="external/dustjs/dustjs-helpers/lib/dust-helpers.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- BOOTSTRAP JS -->
+        <script type="text/javascript" src="external/bootstrap/js/button.js"></script>
+        <script type="text/javascript" src="external/bootstrap/js/collapse.js"></script>
+
+        <!-- LESS -->
+        <script dev="true"  type="text/javascript" src="external/less-1.5.0.min.js"></script>
+        <script dev="true" type="text/javascript">less = { relativeUrls: true }</script>
+
+        <!-- PRESENTATION APPLICATION -->
+        <script type="text/javascript" src="js/dust-onload.js"></script>
+        <script type="text/javascript" src="js/dust-helpers.js"></script>
+        <script type="text/javascript" src="js/hotkeys.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/scenes.js"></script>
+        <!-- END PRESENTATION APPLICATION -->
+
+        <script dev="true" type="text/javascript">
+            // init the application on load
+            $(document).ready( App.init );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{@setRandomPositionAmount amount="elements" /}
+
+{#elements}
+{^title}
+<div class="scene-element-container animates-in-canvas offcanvasright">
+
+	<div class="scene-element " style="{@randomCssPosition /}">
+		{#image}
+			<div class="image" style="background-image:url('{.}');"></div>
+		{/image}
+	</div>
+
+	{#description}
+	<div class="description fade">{.|s}</div>
+	{/description}
+</div>
+{/title}
+{/elements}

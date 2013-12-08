@@ -1,0 +1,140 @@
+// ANIMATION DEFINITIONS FOR THE TRANSITIONS
+.animates-in-canvas {
+	-webkit-transition: -webkit-transform 0.8s ease-out; //background 0.2s ease-out
+	opacity: 1;
+  &.offcanvasright {
+    -webkit-transform: translate3D(140%,0,0) !important;
+  }
+  &.offcanvasleft {
+    -webkit-transform: translate3D(-140%,0,0) !important;
+  }
+}
+
+// TITLE ANIMATION
+h1 {
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  &.offcanvasleft {
+    -webkit-transition: all 0.8s ease-out;
+    opacity: 0 !important; 
+  }
+}
+
+// DESCRIPTION ANIMATION
+.offcanvasleft .description {
+  -webkit-transition: all 0.8s ease-out;
+  opacity: 0 !important;
+}
+
+
+// ANIMATION DEFINITIONS FOR THE DIFFERENT FLOATING BUBBLES
+.scene-element-container:nth-child(even) .scene-element{
+	-webkit-animation:scene-element-a 25s infinite linear;-moz-animation:scene-element-a 25s infinite linear;-o-animation:scene-element-a 25s infinite linear;animation:scene-element-a 25s infinite linear;
+}
+.scene-element-container:nth-child(odd) .scene-element{
+	-webkit-animation:scene-element-b 30s infinite linear;-moz-animation:scene-element-b 30s infinite linear;-o-animation:scene-element-b 30s infinite linear;animation:scene-element-b 30s infinite linear;
+}
+.scene-element-container:nth-child(3n) .scene-element{
+	-webkit-animation:scene-element-c 35s infinite linear;-moz-animation:scene-element-c 35s infinite linear;-o-animation:scene-element-c 35s infinite linear;animation:scene-element-c 35s infinite linear;
+}
+.scene-element-container:nth-child(4n) .scene-element{
+  -webkit-animation:scene-element-d 30s infinite linear;-moz-animation:scene-element-d 30s infinite linear;-o-animation:scene-element-d 30s infinite linear;animation:scene-element-d 30s infinite linear;
+}
+.scene-element-container:nth-child(5n) .scene-element{
+  -webkit-animation:scene-element-e 25s infinite linear;-moz-animation:scene-element-e 25s infinite linear;-o-animation:scene-element-e 25s infinite linear;animation:scene-element-e 25s infinite linear;
+}
+
+@-webkit-keyframes scene-element-a {
+  0% {
+   -webkit-transform: translate3D(-0,-0,0);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  25% {
+  }
+  
+  50% {
+    -webkit-transform: translate3D(5rem, 3rem, 0);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  
+  100% {
+   -webkit-transform: translate3D(0,0,0);
+   -webkit-animation-timing-function: ease-in-out;
+  }
+}
+
+
+@-webkit-keyframes scene-element-b {
+  0% {
+   -webkit-transform: translate3D(0,0,0);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  25% {
+  }
+  
+  50% {
+  	-webkit-transform: translate3D(1rem, 5rem, 0);
+  	-webkit-animation-timing-function: ease-in-out;
+  }
+  
+  100% {
+   -webkit-transform: translate3D(0,0,0);
+   -webkit-animation-timing-function: ease-in-out;
+  }
+}
+
+@-webkit-keyframes scene-element-c {
+  0% {
+   -webkit-transform: translate3D(0,0,0);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  25% {
+  }
+  
+  50% {
+  	-webkit-transform: translate3D(-5rem, 2rem, 0);
+  	-webkit-animation-timing-function: ease-in-out;
+  }
+  
+  100% {
+   -webkit-transform: translate3D(0,0,0);
+   -webkit-animation-timing-function: ease-in-out;
+  }
+}
+
+@-webkit-keyframes scene-element-d {
+  0% {
+   -webkit-transform: translate3D(0,0,0);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  25% {
+  }
+  
+  50% {
+    -webkit-transform: translate3D(5rem, 1rem, 0);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  
+  100% {
+   -webkit-transform: translate3D(0,0,0);
+   -webkit-animation-timing-function: ease-in-out;
+  }
+}
+
+@-webkit-keyframes scene-element-e {
+  0% {
+   -webkit-transform: translate3D(0,0,0);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  25% {
+  }
+  
+  50% {
+    -webkit-transform: translate3D(2rem, 5rem, 0);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  
+  100% {
+   -webkit-transform: translate3D(0,0,0);
+   -webkit-animation-timing-function: ease-in-out;
+  }
+}
