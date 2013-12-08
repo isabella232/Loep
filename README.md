@@ -47,12 +47,12 @@ Serve index.html, checkout ./js/hotkeys.js for the possible short-cuts and have 
 ## External dependencies
 
 * Directly checked in into ./external
-** [jquery](http://jquery.com/)
-** [less](http://lesscss.org/)
+    * [jquery](http://jquery.com/)
+    * [less](http://lesscss.org/)
 * As git submodule
-** [Bootstrap 3](http://getbootstrap.com/)
-** [dustjs (linkedIn fork)](http://linkedin.github.io/dustjs/)
-** [jquery.hotkeys](https://github.com/tzuryby/jquery.hotkeys)
+    * [Bootstrap 3](http://getbootstrap.com/)
+    * [dustjs (linkedIn fork)](http://linkedin.github.io/dustjs/)
+    * [jquery.hotkeys](https://github.com/tzuryby/jquery.hotkeys)
 
 ### To install the git submodules
 
@@ -62,9 +62,9 @@ Serve index.html, checkout ./js/hotkeys.js for the possible short-cuts and have 
 ## Notes
 
 * It's still a bit messy all around, but it was a quick coding job, some interesting tidbits:
-** CSS trick to maintain aspect ratio of div's while staying scalable
-** dust helper hack with setting variables before looping through a array of items, in order to set the slightly random positions
-** Works on iOS :P
+    * CSS trick to maintain aspect ratio of div's while staying scalable
+    * dust helper hack with setting variables before looping through a array of items, in order to set the slightly random positions
+    * Works on iOS :P
 
 ## Contributors
 
