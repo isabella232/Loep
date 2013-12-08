@@ -46,13 +46,18 @@ Serve index.html, checkout ./js/hotkeys.js for the possible short-cuts and have 
 
 ## External dependencies
 
-The external dependencies have for now just been checked in into ./external, it's easier like that.
+* Directly checked in into ./external
+** [jquery](http://jquery.com/)
+** [less](http://lesscss.org/)
+* As git submodule
+** [Bootstrap 3](http://getbootstrap.com/)
+** [dustjs (linkedIn fork)](http://linkedin.github.io/dustjs/)
+** [jquery.hotkeys](https://github.com/tzuryby/jquery.hotkeys)
 
-* [jquery](http://)
-* [less](http://)
-* [Bootstrap 3](http://)
-* [dustjs](http://)
-* [jquery.hotkeys](http://)
+### To install the git submodules
+
+`git submodule init`
+`git submodule update`
 
 ## Notes
 

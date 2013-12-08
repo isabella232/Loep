@@ -1,0 +1,9 @@
+[submodule "external/bootstrap"]
+	path = external/bootstrap
+	url = https://github.com/twbs/bootstrap.git
+[submodule "external/dustjs"]
+	path = external/dustjs
+	url = https://github.com/linkedin/dustjs.git
+[submodule "external/jquery.hotkeys"]
+	path = external/jquery.hotkeys
+	url = https://github.com/tzuryby/jquery.hotkeys.git
