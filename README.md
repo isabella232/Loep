@@ -1,6 +1,6 @@
 # LOEP
 
-Simple javascript based presentation tool: 
+Simple javascript based keynote presentation tool: 
 * drop your images in the images directory
 * add up to 6 images references per scene in scenes.js
 * add some descriptions if you want to
