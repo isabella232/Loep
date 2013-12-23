@@ -8,6 +8,14 @@ Simple javascript based presentation tool:
 
 _Created for my graduation presentation as I was fed up with Keynote and wanted something a bit more dynamic_
 
+_Tested on Chrome on a 2008 MacBook_
+
+## Demo
+
+You can find a demo of the example presentation on: 
+
+http://calendar42.com/c42uploads/github/Loep/index.html
+
 ## Usage
 
 Add scene-objects to ./js/scenes.js, see the file for some detailed examples.
