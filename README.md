@@ -16,6 +16,8 @@ You can find a demo of the example presentation on:
 
 http://calendar42.com/c42uploads/github/Loep/index.html
 
+_Press your right-arrow button to go to the next slide :)_
+
 ## Usage
 
 Add scene-objects to ./js/scenes.js, see the file for some detailed examples.
